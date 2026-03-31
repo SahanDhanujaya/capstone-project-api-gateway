@@ -3,9 +3,9 @@ spring:
     name: api-gateway
 
   config:
-    import: "optional:configserver:http://localhost:9000"
+    #    fail-fast
+    import: "configserver:"
 
   cloud:
     config:
       uri: http://config.platform:9000
-
